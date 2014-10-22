@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<title>Enliven 'em example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="author" content="DeeThemes">
+	
+	<link href='css/enlivenem.css' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+	  body {
+		padding: 50px;
+		margin-bottom: 50px;
+	  }
+	  .example {
+		width: 70%;
+	  }
+	</style>
+  </head>
+  <body>
+	
+  	<h2>Inline SVG example</h2>
+  	<div class="example">
+		<svg class="enlivenem" version="1.1" id="chart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="430" height="290" xml:space="preserve" data-global-elvn="enableViewport, enableClick, oneHalf, startInvisible, responsive, 0">
+			
+			<radialGradient id="chart_background" cx="218.123" cy="151.0439" r="294.2252" gradientTransform="matrix(0.9954 0 0 1 0 0)" gradientUnits="userSpaceOnUse">
+				<stop offset="0.2172" style="stop-color:#725456"/>
+				<stop offset="0.4864" style="stop-color:#6F5254"/>
+				<stop offset="0.6948" style="stop-color:#654C4D"/>
+				<stop offset="0.8824" style="stop-color:#554141"/>
+				<stop offset="0.9319" style="stop-color:#4F3D3D"/>
+			</radialGradient>
+			
+			<rect id="Background" fill="url(#chart_background)" width="430" height="290" data-elvn="maskLouversX, in, 0, 700, linear" class="elvn-layer"/>
+			
+			<g id="objects" xmlns="http://www.w3.org/2000/svg">
+				<g id="bars">
+					<g id="bar1">
+						<rect x="66" y="24" fill="#FFF0D3" width="60" height="196" data-elvn="expandT, in, 1700, 500, easeout" class="elvn-layer"></rect>
+						<rect x="66" y="95" fill="#FF5BB5" width="60" height="125" data-elvn="expandB, in, 2300, 500, easeout" class="elvn-layer"></rect>
+					</g>
+					<g id="bar2">
+						<rect x="145" y="24" fill="#FFF0D3" width="60" height="196" data-elvn="expandT, in, 3100, 500, easeout" class="elvn-layer"></rect>
+						<rect x="145" y="134" fill="#FFC251" width="60" height="86" data-elvn="expandB, in, 3600, 500, easeout" class="elvn-layer"></rect>
+					</g>
+					<g id="bar3">
+						<rect x="223" y="24" fill="#FFF0D3" width="60" height="196" data-elvn="expandT, in, 4400, 500, easeout" class="elvn-layer"></rect>
+						<rect x="223" y="69" fill="#86DD72" width="60" height="151" data-elvn="expandB, in, 5000, 500, easeout" class="elvn-layer"></rect>
+					</g>
+					<g id="bar4">
+						<rect x="300" y="24" fill="#FFF0D3" width="60" height="196" data-elvn="expandT, in, 5300, 500, easeout" class="elvn-layer"></rect>
+						<rect x="300" y="170" fill="#42C7B0" width="60" height="50" data-elvn="expandB, in, 5800, 500, easeout" class="elvn-layer"></rect>
+					</g>
+				</g>
+				<g id="line" data-elvn="expandX, in, 700, 700, linear" class="elvn-layer">
+					<rect id="bottom-line" x="35.55" y="229" fill="#FFF0D3" width="356.89" height="2"></rect>
+					<circle id="left-circle" fill="#FFF0D3" cx="36" cy="230" r="4.45"></circle>
+					<circle id="right-circle" fill="#FFF0D3" cx="391" cy="230" r="4.45"></circle>
+				</g>
+				<g data-elvn="scaleC, in, 1400, 300, easeout" class="elvn-layer">
+					<circle id="circle1" fill="#FF5BB5" cx="96" cy="254" r="14.56"></circle>
+					<path id="digit1" fill="#FFF0D3" d="M95.17,262.9V247.9l-3.47,3.04v-2.82l3.47-2.99h2.54v17.76H95.17z"></path>
+				</g>
+				<g data-elvn="scaleC, in, 2800, 300, easeout" class="elvn-layer">
+					<circle id="circle2" fill="#FFC251" cx="175" cy="254" r="14.56"></circle>
+					<path id="digit2" fill="#FFF0D3" d="M169.43,262.9v-2.27c7.5-9.12,7.78-9.05,7.78-10.68c0-3.62-5.21-3.65-5.21,0.05h-2.54
+						c0-6.67,10.3-6.78,10.3-0.03c0,2.23-0.61,2.54-7.23,10.65h7.23v2.27H169.43z"></path>
+				</g>
+				<g data-elvn="scaleC, in, 4100, 300, easeout" class="elvn-layer">
+					<circle id="circle3" fill="#86DD72" cx="252" cy="254" r="14.56"></circle>
+					<path id="digit3" fill="#FFF0D3" d="M246.91,258.08h2.54c0.1,1.9,1.42,2.7,2.89,2.7c3.68,0,4.35-5.86-0.5-5.86v-2.22
+						c1.97,0,3.12-0.66,3.12-2.69c0-3.58-5.01-3.73-5.29-0.2h-2.54c0.15-3.02,2.37-4.84,5.21-4.84c5.7,0,6.74,6.89,2.95,8.76
+						c1.52,0.67,2.49,2,2.49,4.19C257.79,264.76,247.1,264.87,246.91,258.08z"></path>
+				</g>
+				<g data-elvn="scaleC, in, 5000, 300, easeout" class="elvn-layer">
+					<circle id="circle4" fill="#42C7B0" cx="330" cy="254" r="14.56"></circle>
+					<path id="digit4" fill="#FFF0D3" d="M333.39,260.23v2.67h-2.47v-2.67h-7.19v-2.37l6.26-12.72h2.74l-6.24,12.72h4.42v-4.14h2.47
+						v4.14h1.9v2.37H333.39z"></path>
+				</g>
+			</g>
+		</svg>
+	</div><!--end example-->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/snap/snap.svg-min.js"></script>
+	<script src="js/enlivenem.min.js"></script>
+  
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 200 75" enable-background="new 0 0 200 75" xml:space="preserve" data-global-elvn="enableViewport, disableOnClick, none, startInvisible, notResponsive, 200">
+<g id="bird" xmlns="http://www.w3.org/2000/svg">
+	<path id="bird-body" fill="#FFFFFF" d="M146,9c-3.4,1.5-7,2.5-10.8,3c3.9-2.3,6.9-6,8.3-10.4c-3.6,2.2-7.7,3.7-12,4.6
+		c-3.4-3.7-8.3-6-13.8-6c-10.4,0-18.9,8.5-18.9,18.9c0,1.5,0.2,2.9,0.5,4.3c1.3,15.7-10.6,30.3-17.4,35.3
+		c-6.5,5.1-14.6,8.1-23.4,8.1c-1.5,0-3-0.1-4.5-0.3c8.4,5.4,18.3,8.5,28.9,8.5c34.7,0,53.7-28.8,53.7-53.7c0-0.8,0-1.6-0.1-2.4
+		C140.3,16.1,143.5,12.8,146,9z"></path>
+</g>
+<g id="_x33_" data-elvn="fade, out, 750, 50, linear" class="elvn-layer" xmlns="http://www.w3.org/2000/svg">
+	<path id="wing3" fill="#FFFFFF" d="M99.9,23.3C84.2,22.5,70.3,15,61,3.6c-1.6,2.8-2.6,6-2.6,9.5c0,6.5,3.3,12.3,8.4,15.7
+		c-3.1-0.1-6-0.9-8.5-2.4c0,0.1,0,0.2,0,0.2c0,9.1,6.5,16.8,15.1,18.5c-1.6,0.4-3.2,0.7-5,0.7c-1.2,0-2.4-0.1-3.6-0.3
+		c2.4,7.5,9.4,13,17.6,13.1C89.3,53.6,101.2,39,99.9,23.3z" data-elvn="flyC, in, 500, 50, linear" class="elvn-layer"></path>
+</g>
+<g id="_x32_" data-elvn="fade, out, 950, 50, linear" class="elvn-layer" xmlns="http://www.w3.org/2000/svg">
+	<path id="wing2" fill="#FFFFFF" d="M99.9,23.3C84.2,22.5,70.3,15,61,3.6c-1.6,2.8-2.6,6-2.6,9.5c0,6.5,3.3,12.3,8.4,15.7
+		c-3.1-0.1-6-0.9-8.5-2.4c0,0.1,0,0.2,0,0.2c0,9.1,6.5,16.8,15.1,18.5c-1.6,0.4-3.2,0.7-5,0.7c-1.2,0-2.4-0.1-3.6-0.3
+		c2.4,7.5,9.4,13,17.6,13.1C89.3,53.6,101.2,39,99.9,23.3z" data-elvn="flyC, in, 800, 100, linear" class="elvn-layer"></path>
+</g>
+<g id="_x31_" xmlns="http://www.w3.org/2000/svg">
+	<path id="wing1" fill="#FFFFFF" d="M99.9,23.3C84.2,22.5,70.3,15,61,3.6c-1.6,2.8-2.6,6-2.6,9.5c0,6.5,3.3,12.3,8.4,15.7
+		c-3.1-0.1-6-0.9-8.5-2.4c0,0.1,0,0.2,0,0.2c0,9.1,6.5,16.8,15.1,18.5c-1.6,0.4-3.2,0.7-5,0.7c-1.2,0-2.4-0.1-3.6-0.3
+		c2.4,7.5,9.4,13,17.6,13.1C89.3,53.6,101.2,39,99.9,23.3z" data-elvn="flyC, in, 1000, 100, linear" class="elvn-layer"></path>
+</g>
+</svg>

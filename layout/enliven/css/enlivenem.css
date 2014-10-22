@@ -1,0 +1,25 @@
+/*************************************************************************************
+ * @name: enlivenem.css - the part of Enliven'em script
+ * @version: 1.0
+ * @URL: http://enlivenem.com
+ * @copyright: (c) 2014 DeeThemes (http://codecanyon.net/user/DeeThemes)
+ * @licenses: http://codecanyon.net/licenses/regular
+			  http://codecanyon.net/licenses/extended
+*************************************************************************************/
+.elvn-responsive {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.elvn-responsive svg.enlivenem {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+svg.enlivenem {
+	overflow: hidden!important;
+}
