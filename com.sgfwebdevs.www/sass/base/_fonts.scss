@@ -1,0 +1,34 @@
+@include font-face(sgf, 'fonts/sgf');
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'sgf';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo:before {
+    content: "\e605";
+}
+.icon-dribbble:before {
+    content: "\e600";
+}
+.icon-facebook:before {
+    content: "\e601";
+}
+.icon-github:before {
+    content: "\e602";
+}
+.icon-meetup:before {
+    content: "\e603";
+}
+.icon-twitter:before {
+    content: "\e604";
+}

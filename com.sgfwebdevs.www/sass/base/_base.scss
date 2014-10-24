@@ -1,0 +1,49 @@
+// Vertical Rhythm
+$base-font-size: 18px;
+$basepx: 18;
+$base-line-height: 24px;
+@include establish-baseline;
+
+// global layout styles
+@mixin container{
+	@include outer-container;
+	@include media($tablet){ width: auto; }
+}
+
+.container{
+	@include container; padding: 0 15px; position: relative;
+}
+
+html, body{
+	font-smooth:always; -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+
+//html{ height: 100%; }
+html{
+    height: 100%;
+    background: url(/images/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body{
+    height: 100%;
+    @include media($mobile){
+        height: auto;
+    }
+}
+
+// -------------------------------------------------------------------------------------
+//
+// Elements
+//
+// -------------------------------------------------------------------------------------
+
+@import "fonts";
+@import "buttons";
+@import "typography";
+@import "forms";
+@import "navigation";
+@import "header";
+@import "footer";

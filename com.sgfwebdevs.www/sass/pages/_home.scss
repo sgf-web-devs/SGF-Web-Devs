@@ -1,0 +1,39 @@
+header{
+    text-align: center; margin: 1em 0;
+    img{ width: 30%; }
+
+    @include media($desktop)
+    {
+        img{ width: 40%; }
+    }
+
+    @include media($tablet)
+    {
+        img{ width: 50%; }
+    }
+
+    @include media($mobile)
+    {
+        img{ width: 90%; }
+    }
+}
+
+ul{
+    font-size: 3em; padding: 0; margin: 0; text-align: center; top: 50%; position: relative;
+    li{
+        display: inline-block; margin: 0 .5em;
+        a{ color: #fff; text-decoration: none; }
+    }
+    @include media($mobile)
+    {
+        top: 5%;
+        //li{ display: block; margin: 1em 0; }
+        @include clearfix;
+        li{ width: 36%; margin: .5em 0; }
+    }
+}
+
+h1 {
+    margin: 1em auto;
+    background: url("/images/logo.svg") no-repeat;
+}
