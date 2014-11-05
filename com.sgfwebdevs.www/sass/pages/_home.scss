@@ -19,14 +19,14 @@ header{
 }
 
 ul{
-    font-size: 3em; padding: 0; margin: 0; text-align: center; top: 50%; position: relative;
+    font-size: 3em; padding: 0; margin: 0; text-align: center; top: 25%; position: relative;
     li{
         display: inline-block; margin: 0 .5em;
         a{ color: #fff; text-decoration: none; }
     }
     @include media($mobile)
     {
-        top: 5%;
+        margin-top: 1em;
         //li{ display: block; margin: 1em 0; }
         @include clearfix;
         li{ width: 36%; margin: .5em 0; }
@@ -36,4 +36,15 @@ ul{
 h1 {
     margin: 1em auto;
     background: url("/images/logo.svg") no-repeat;
+}
+
+.sponsors{
+    position: relative; top: 40%; text-align: center;
+    h2{ color: #fff; margin: 0; }
+
+    @include media($mobile)
+    {
+        margin-top: 2em;
+        img{ width: 80%; }
+    }
 }
