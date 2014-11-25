@@ -41,7 +41,7 @@ h1 {
 .sponsors{
     position: relative; top: 40%; text-align: center;
     h2{ color: #fff; margin: 0; }
-
+    a{ margin-right: 20px; &:last-child{ margin-right: 0; } }
     @include media($mobile)
     {
         margin-top: 2em;

@@ -2161,6 +2161,10 @@ h1 { margin: 1em auto; background: url("/images/logo.svg") no-repeat; }
 .sponsors { position: relative; top: 40%; text-align: center; }
 /* line 43, ../sass/pages/_home.scss */
 .sponsors h2 { color: #fff; margin: 0; }
+/* line 44, ../sass/pages/_home.scss */
+.sponsors a { margin-right: 20px; }
+/* line 44, ../sass/pages/_home.scss */
+.sponsors a:last-child { margin-right: 0; }
 @media screen and (max-width: 480px) { /* line 41, ../sass/pages/_home.scss */
   .sponsors { margin-top: 2em; }
   /* line 48, ../sass/pages/_home.scss */
