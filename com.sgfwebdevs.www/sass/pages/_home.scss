@@ -29,7 +29,7 @@ ul{
         margin-top: 1em;
         //li{ display: block; margin: 1em 0; }
         @include clearfix;
-        li{ width: 36%; margin: .5em 0; }
+        li{ display: block; margin: .5em 0; }
     }
 }
 

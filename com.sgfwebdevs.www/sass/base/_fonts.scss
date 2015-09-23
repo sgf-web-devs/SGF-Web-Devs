@@ -13,7 +13,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-slack:before {
+    content: "\e606";
+}
 .icon-logo:before {
     content: "\e605";
 }

@@ -336,22 +336,25 @@ body { height: 100%; }
 /* line 3, ../sass/base/_fonts.scss */
 [class^="icon-"], [class*=" icon-"] { font-family: 'sgf'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-/* line 17, ../sass/base/_fonts.scss */
+/* line 16, ../sass/base/_fonts.scss */
+.icon-slack:before { content: "\e606"; }
+
+/* line 19, ../sass/base/_fonts.scss */
 .icon-logo:before { content: "\e605"; }
 
-/* line 20, ../sass/base/_fonts.scss */
+/* line 22, ../sass/base/_fonts.scss */
 .icon-dribbble:before { content: "\e600"; }
 
-/* line 23, ../sass/base/_fonts.scss */
+/* line 25, ../sass/base/_fonts.scss */
 .icon-facebook:before { content: "\e601"; }
 
-/* line 26, ../sass/base/_fonts.scss */
+/* line 28, ../sass/base/_fonts.scss */
 .icon-github:before { content: "\e602"; }
 
-/* line 29, ../sass/base/_fonts.scss */
+/* line 31, ../sass/base/_fonts.scss */
 .icon-meetup:before { content: "\e603"; }
 
-/* line 32, ../sass/base/_fonts.scss */
+/* line 34, ../sass/base/_fonts.scss */
 .icon-twitter:before { content: "\e604"; }
 
 /*
@@ -2152,7 +2155,7 @@ ul li a { color: #fff; text-decoration: none; }
   /* line 23, ../sass/bourbon/addons/_clearfix.scss */
   ul:after { clear: both; }
   /* line 32, ../sass/pages/_home.scss */
-  ul li { width: 36%; margin: .5em 0; } }
+  ul li { display: block; margin: .5em 0; } }
 
 /* line 36, ../sass/pages/_home.scss */
 h1 { margin: 1em auto; background: url("/images/logo.svg") no-repeat; }
