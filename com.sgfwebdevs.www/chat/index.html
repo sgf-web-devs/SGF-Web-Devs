@@ -1,0 +1,160 @@
+
+<html>
+<head>
+    <title>Chat Demo</title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        ("undefined"==typeof module||"undefined"==typeof module.exports)&&(exports=window),function(t){var i=function(i,e,o,a,r,n){var g={left:e+"px",top:o+"px",width:a+"px",height:r+"px"},d=function(){var t=i.querySelector(".OT_root");if(t){var e=t.style.width;t.style.width=a+"px",t.style.width=e||""}};n&&t?(console.log("animate"),t(i).stop(),t(i).animate(g,n.duration||200,n.easing||"swing",function(){d(),n.complete&&n.complete.call(this)})):OT.$.css(i,g),d()},e=function(t,i){var e=OT.$.css(t,i);return e?parseInt(e,10):0},o=function(){return(1e8*Math.random()).toFixed(0)},a=function(t){var i=OT.$.height(t);return i?parseInt(i,10):0},r=function(t){var i=OT.$.width(t);return i?parseInt(i,10):0},n=function(t,o,a,r,n,g,d,l,s){var h,R=t.length,u=function(t,i){for(var e,r,n,g,d,l,s,u=1;R>=u;u++){var f=u,b=Math.ceil(R/f);s=Math.floor(a/b),l=Math.floor(o/f),tRatio=s/l,tRatio>i?(tRatio=i,s=l*tRatio):t>tRatio&&(tRatio=t,l=s/tRatio);var p=l*s*R;(void 0===e||p>e)&&(e=p,g=s,d=l,r=f,n=b)}return{maxArea:e,targetCols:r,targetRows:n,targetHeight:g,targetWidth:d,ratio:h}};if(g){var f=t.length>0&&t[0].querySelector("video");h=f&&f.videoHeight&&f.videoWidth?u(f.videoHeight/f.videoWidth,f.videoHeight/f.videoWidth):u(.75,.75)}else h=u(d,l);for(var b=h.targetRows*h.targetCols-R,p=b*h.targetWidth/2,c=(h.targetRows-1)*h.targetCols,m=(a-h.targetRows*h.targetHeight)/2,v=(o-h.targetCols*h.targetWidth)/2,x=0,y=0,T=0;T<t.length;T++){var M=t[T];T%h.targetCols===0?(x=v,T==c&&(x+=p),y+=0===T?m:h.targetHeight):x+=h.targetWidth,OT.$.css(M,"position","absolute");var w=h.targetWidth-e(M,"paddingLeft")-e(M,"paddingRight")-e(M,"marginLeft")-e(M,"marginRight")-e(M,"borderLeft")-e(M,"borderRight"),O=h.targetHeight-e(M,"paddingTop")-e(M,"paddingBottom")-e(M,"marginTop")-e(M,"marginBottom")-e(M,"borderTop")-e(M,"borderBottom");i(M,x+r,y+n,w,O,s)}},g=function(t){return"none"!==OT.$.css(t,"display")},d=function(t,i){if("none"!==OT.$.css(t,"display")){var d=t.getAttribute("id");d||(d="OT_"+o(),t.setAttribute("id",d));var l=a(t)-e(t,"borderTop")-e(t,"borderBottom"),s=r(t)-e(t,"borderLeft")-e(t,"borderRight"),h=l/s,R=0,u=0,f=0,b=0,p=Array.prototype.filter.call(t.querySelectorAll("#"+d+">."+i.bigClass),g),c=Array.prototype.filter.call(t.querySelectorAll("#"+d+">*:not(."+i.bigClass+")"),g);if(p.length>0&&c.length>0){var m=p[0].querySelector("video");bigRatio=m&&m.videoHeight&&m.videoWidth?m.videoHeight/m.videoWidth:.75;var v,x;h>bigRatio?(v=s,x=Math.min(Math.floor(l*i.bigPercentage),s*bigRatio),u=x,f=l-u):(x=l,v=Math.min(s*i.bigPercentage,Math.floor(x/bigRatio)),R=v,b=s-R),i.bigFirst?(n(p,v,x,0,0,i.bigFixedRatio,i.bigMinRatio,i.bigMaxRatio,i.animate),n(c,s-R,l-u,R,u,i.fixedRatio,i.minRatio,i.maxRatio,i.animate)):(n(c,s-R,l-u,0,0,i.fixedRatio,i.minRatio,i.maxRatio,i.animate),n(p,v,x,b,f,i.bigFixedRatio,i.bigMinRatio,i.bigMaxRatio,i.animate))}else p.length>0&&0===c.length?n(p,s,l,0,0,i.bigFixedRatio,i.bigMinRatio,i.bigMaxRatio,i.animate):n(c,s-R,l-u,R,u,i.fixedRatio,i.minRatio,i.maxRatio,i.animate)}};exports.initLayoutContainer=function(t,i){return i=OT.$.defaults(i||{},{maxRatio:1.5,minRatio:9/16,fixedRatio:!1,animate:!1,bigClass:"OT_big",bigPercentage:.8,bigFixedRatio:!1,bigMaxRatio:1.5,bigMinRatio:9/16,bigFirst:!0}),t="string"==typeof t?OT.$(t):t,OT.onLoad(function(){d(t,i)}),{layout:d.bind(null,t,i)}},OT.initLayoutContainer=exports.initLayoutContainer}(window.hasOwnProperty("jQuery")?jQuery:void 0);
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link href="main.css" media="screen" rel="stylesheet" type="text/css"/>
+
+    <style type="text/css" media="screen">
+        #layoutContainer {
+            /*width: 320px;*/
+            /*height: 240px;*/
+            /*background-color: #DDD;*/
+            /*position: relative;*/
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #DDD;
+        }
+
+        }
+    </style>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            color: #B0BEC5;
+            display: table;
+            font-weight: 100;
+            font-family: 'Lato';
+        }
+
+        .container {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .content {
+            text-align: center;
+            display: inline-block;
+        }
+
+        .title {
+            font-size: 96px;
+            margin-bottom: 40px;
+        }
+
+        .quote {
+            font-size: 24px;
+        }
+
+        .media-body { color: #000; font-size: 1.175em; font-weight: 900 !important; }
+        .media-body small { color: #B0BEC5; }
+        .panel-body { height: 90vh; overflow: scroll; }
+        .chat_container { position: relative; height: 100vh; }
+        .panel-footer { position: absolute; bottom: 0; }
+
+        .panel, .panel-info { border: none; }
+    </style>
+</head>
+<body>
+<div class="chat_wrapper">
+    <div class="video_chat" style="width: 100%;">
+        <div id="layoutContainer">
+            <div id="publisherContainer" class="bigClass"></div>
+        </div>
+    </div>
+</div>
+<script src='//static.opentok.com/v2/js/opentok.min.js'></script>
+<script>
+    var userName = 'sgf';
+    var layoutContainer = document.getElementById("layoutContainer");
+
+    // Initialize the layout container and get a reference to the layout method
+    var layout = initLayoutContainer(layoutContainer).layout;
+
+
+    var apiKey = '45367452';
+    //var sessionId = '1_MX40NTM2NzQ1Mn5-MTQ0NDI1MjU2MzI4NX5NZ1lORnVSYUljUWJvMFl6eFZtZnFoRWF-UH4';
+    //var token = 'T1==cGFydG5lcl9pZD00NTM2NzQ1MiZzaWc9MGFlMWFjMGRmMGJlYWMyNGU3NmY2ZjNkYTg5ZGQyYThiMzQ2OGI1YTpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTFfTVg0ME5UTTJOelExTW41LU1UUTBOREkxTWpVMk16STROWDVOWjFsT1JuVlNZVWxqVVdKdk1GbDZlRlp0Wm5Gb1JXRi1VSDQmY3JlYXRlX3RpbWU9MTQ0NDI1MjYzMiZub25jZT0wLjgyNzA3MTY4MTkwMjQyMzUmZXhwaXJlX3RpbWU9MTQ0Njg0NDU1NCZjb25uZWN0aW9uX2RhdGE9';
+    
+    // Routed
+    var sessionId = '2_MX40NTM2NzQ1Mn5-MTQ0NDI1MzI1NzgyOH5EZHYyUFI3U2ZlODliY25pUGF6ZGk5YzZ-fg';
+    var token = 'T1==cGFydG5lcl9pZD00NTM2NzQ1MiZzaWc9MGJlMjlhMjdmNjk0OTc2YjUzMTUxZjM4ODllYzA1YTA0MmY0NDEwNzpyb2xlPXB1Ymxpc2hlciZzZXNzaW9uX2lkPTJfTVg0ME5UTTJOelExTW41LU1UUTBOREkxTXpJMU56Z3lPSDVFWkhZeVVGSTNVMlpsT0RsaVkyNXBVR0Y2WkdrNVl6Wi1mZyZjcmVhdGVfdGltZT0xNDQ0MjUzMjYwJm5vbmNlPTAuMzg4OTMzOTExNTA0MzgwMDYmZXhwaXJlX3RpbWU9MTQ0Njg0NDU1NCZjb25uZWN0aW9uX2RhdGE9';
+    
+    var session = OT.initSession(apiKey, sessionId);
+
+
+
+
+    session.on("streamCreated", function (event) {
+        session.subscribe(event.stream, "layoutContainer", {
+            insertMode: "append"
+        });
+        layout();
+    }).connect(apiKey, token, function (err) {
+        if (!err) {
+            session.publish("publisherContainer");
+            layout();
+        }
+    });
+
+    var resizeTimeout;
+    window.onresize = function () {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function () {
+            layout();
+        }, 20);
+    };
+
+    $('#chat_form').on('submit', function () {
+        var message = $('#chat_message').val();
+
+        if(message) {
+            session.signal({
+                type: 'chat',
+                data: {message: $('#chat_message').val(), user: userName}
+            }, function (error) {
+                if (!error) {
+                    $('#chat_message').val('');
+                }
+            });
+        }
+        return false;
+    });
+
+    session.on('signal:chat', function (event) {
+        var msg = document.createElement('p');
+        msg.innerHTML = event.data;
+        msg.className = event.from.connectionId === session.connection.connectionId ? 'mine' : 'theirs';
+        //msgHistory.appendChild(msg);
+
+        $('.media-list').append(
+                '<li class="media"><div class="media-body"><div class="media"><div class="media-body"><small class="">' + event.data.user + '</small><br/>' + event.data.message.parseURL() + '<hr /></div></div></div></li>'
+        );
+        //msg.scrollIntoView();
+        $(".panel-body").animate({scrollTop: $('.panel-body')[0].scrollHeight}, 200);
+        //console.log(event.data.user);
+    });
+
+
+    String.prototype.parseURL = function () {
+        return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&~\?\/.=]+/g, function (url) {
+            return url.link(url);
+        });
+    };
+
+</script>
+</body>
+</html>

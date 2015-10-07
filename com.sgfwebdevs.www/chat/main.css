@@ -1,0 +1,28 @@
+.btn.btn-clear {
+  background-color: transparent;
+  border: 0;
+  cursor: auto;
+  box-shadow: none; }
+
+.bg-success {
+  padding: 5px; }
+
+.chat_wrapper {
+  height: 100vh;
+  width: 100%; }
+  .chat_wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .chat_wrapper .video_chat {
+    width: 80%;
+    height: 100%;
+    float: left;
+    position: relative; }
+  .chat_wrapper .written_chat {
+    width: 20%;
+    float: right;
+    height: 100vh;
+    overflow-y: scroll; }
+
+/*# sourceMappingURL=mycra.css.map */
