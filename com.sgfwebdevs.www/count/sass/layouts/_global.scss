@@ -1,0 +1,9 @@
+@mixin container{
+	@include outer-container;
+	@include media($tablet){ width: auto; }
+}
+
+.container{
+	@include container; padding: 0 15px; position: relative;
+	&.mobile_full{ padding: 0; }
+}

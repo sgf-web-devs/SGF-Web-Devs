@@ -1,0 +1,19 @@
+* html { font-size: 112.5%; }
+html { font-size: 18px; line-height: 1.33333em; height: 100%; overflow-y: scroll; }
+
+a, a:visited{  }
+a:hover{  }
+
+html {
+    height: 100%;
+    background: url(http://sgfwebdevs.com/images/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
