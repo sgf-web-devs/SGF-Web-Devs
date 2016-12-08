@@ -1,3 +1,3 @@
 <?php 
-    header( 'Location: https://sgfwebdevs.typeform.com/to/A2HLlQ' ); 
+    header( 'Location: https://sgf-web-devs-slack-invite.herokuapp.com/' ); 
 ?>
